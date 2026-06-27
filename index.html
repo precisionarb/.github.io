@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Precision ARB | Tree Surgery & Tree Removal in Herefordshire</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 <meta name="description" content="Veteran-owned tree surgery covering Herefordshire, the Forest of Dean, Monmouth and Gloucester. Tree felling, crown reduction, aerial work and hedge trimming. Fully insured. Call 07969 923844.">
 <meta name="keywords" content="tree surgeon Herefordshire, tree surgery Hereford, tree surgeon Forest of Dean, tree surgeon Monmouth, tree surgeon Gloucester, tree felling, tree removal, crown reduction, hedge trimming, aerial tree work, arborist">
 <link rel="canonical" href="https://precisionarb.co.uk/">
@@ -701,7 +706,15 @@
     .g-item:nth-child(1) { grid-column: span 2; height: 260px; }
     .g-item:nth-child(4) { grid-column: span 1; }
     .hero-logo-large { display: none; }
-    .nav-links { display: none; }
+    /* On mobile, hide the centred wordmark and show the nav links in the header */
+    .nav-wordmark { display: none; }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.04em; }
+    .nav-cta { padding: 0.4rem 0.9rem !important; }
+    nav { padding: 0 4%; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
     .footer-copy { text-align: left; }
   }
@@ -711,6 +724,11 @@
     .gallery-mosaic { grid-template-columns: 1fr; }
     .g-item:nth-child(1) { grid-column: span 1; }
     .g-item:nth-child(4) { grid-column: span 1; }
+    /* Tighter spacing so all four links fit on small phones */
+    .nav-links { gap: 0.6rem; }
+    .nav-links a { font-size: 0.65rem; letter-spacing: 0.02em; }
+    .nav-logo img.logo-icon { height: 38px; }
+    .nav-cta { padding: 0.35rem 0.7rem !important; }
   }
 
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
@@ -757,7 +775,7 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -770,7 +788,7 @@
       <h1 class="hero-title">Precision tree<br>surgery you can<br><em>rely on.</em></h1>
       <p class="hero-sub">Professional arboriculture for domestic and commercial clients across Herefordshire and all surrounding areas — including Hereford, Leominster, Ross-on-Wye, Ledbury, the Forest of Dean, Monmouth and Gloucester. Fully insured, qualified, and committed to the highest standards of tree care.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="#contact" class="btn-primary">Contact Us</a>
         <a href="#services" class="btn-ghost">Our Services</a>
       </div>
     </div>
@@ -932,7 +950,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
     <div class="footer-copy">
       &copy; 2025 Precision ARB. All rights reserved.<br>
